@@ -10,35 +10,37 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
+
   </head>
   <body>
+
     <div class="wrapper">
       <div class="sidebar">
         <div class="profile">
           <img src="images/myPhoto.webp" alt="" />
-          <h1>Peter Král</h1>
+          <h3>Peter Král</h1>
           <p>Frontend Developer</p>
           <ul>
             <li>
-              <a href="#" class="active">
+              <a href="#" class="active" id="buttonHome">
                 <span class="icon"><i class="fas fa-home"></i></span>
                 <span class="item">Home</span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" class="inactive" id="buttonMyDashboard">
                 <span class="icon"><i class="fas fa-desktop"></i></span>
                 <span class="item">My Dashboard</span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" class="inactive" id="buttonPeople">
                 <span class="icon"><i class="fas fa-user-friends"></i></span>
                 <span class="item">People</span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" class="inactive" id="buttonPerformance">
                 <span class="icon"><i class="fas fa-database"></i></span>
                 <span class="item">Performance</span>
               </a>
@@ -47,5 +49,40 @@
         </div>
       </div>
     </div>
+
+    <div class="showPlace" id="home">
+      <h1>Lorem ipsum dolor sit.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Cumque ipsa quae perferendis illum exercitationem saepe! 
+        Molestiae laborum unde modi ducimus nam harum, 
+        itaque consequatur quo voluptate temporibus nihil, 
+        maxime earum tenetur similique perferendis eligendi! 
+        Voluptatibus aut est incidunt nemo quibusdam in nam nulla? 
+        Asperiores esse eum illum! Facilis consequatur voluptatem 
+        quisquam ratione ab commodi sint!</p>
+    </div>
+    <div class="showPlace" id="myDashboard">
+      <h1>Lorem ipsum.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Exercitationem blanditiis quas iure voluptatem quos incidunt, odio earum ut unde molestiae.
+      </p>
+    </div>
+    <div class="showPlace" id="people">
+      <h1>Lorem ipsum sit.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Doloribus aliquid optio reiciendis dignissimos veniam dolore 
+        mollitia dolores libero molestiae ratione commodi voluptatum, 
+        deserunt officia iusto, at maxime eius nisi harum quaerat! 
+        Laboriosam deleniti expedita corporis quam quia obcaecati facere voluptatum?</p>
+    </div>
+    <div class="showPlace" id="performance">
+      <h1>Lorem dolor sit.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Magnam nostrum ipsam libero sequi delectus porro, iure doloribus 
+        maxime non ea temporibus ratione architecto. Dicta sunt fugiat, 
+        laborum iste ratione velit.</p>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
