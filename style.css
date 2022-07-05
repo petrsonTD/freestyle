@@ -100,8 +100,11 @@ margin-bottom: 1rem;
 }
 
 .activeShowPlace {
-    animation: fadeIn 3s;
     display: visible;
+}
+
+.animationIn {
+    animation: fadeIn 0.5s;
 }
 
 @keyframes fadeIn {
@@ -115,9 +118,14 @@ margin-bottom: 1rem;
 }
 
 .inactiveShowPlace {
-    animation: fadeOut 3s;
     display: none;
 }
+
+.animationOut {
+    animation: fadeOut 0.5s;
+}
+
+@keyframes fadeOut{
 
 from {
     opacity: 1;
@@ -125,4 +133,4 @@ from {
 
 to {
     opacity: 0;
-}
+}}

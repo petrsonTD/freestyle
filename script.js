@@ -42,30 +42,58 @@ const performance = document.querySelector("#performance")
 
 
 buttonHome.addEventListener("click", e => {
-    home.classList.replace("inactiveShowPlace", "activeShowPlace");
-    myDashboard.classList.replace("activeShowPlace", "inactiveShowPlace");
-    people.classList.replace("activeShowPlace", "inactiveShowPlace");
-    performance.classList.replace("activeShowPlace", "inactiveShowPlace");
+    myDashboard.classList.replace("animationIn", "animationOut");
+    people.classList.replace("animationIn", "animationOut");
+    performance.classList.replace("animationIn", "animationOut");
+    setTimeout(() => {
+        home.classList.replace("animationOut", "animationIn");
+   
+        home.classList.replace("inactiveShowPlace", "activeShowPlace");
+        myDashboard.classList.replace("activeShowPlace", "inactiveShowPlace");
+        people.classList.replace("activeShowPlace", "inactiveShowPlace");
+        performance.classList.replace("activeShowPlace", "inactiveShowPlace");
+    }, 600)
 })
 
 buttonMyDashboard.addEventListener("click", e => {
-    home.classList.replace("activeShowPlace", "inactiveShowPlace");
-    myDashboard.classList.replace("inactiveShowPlace", "activeShowPlace");
-    people.classList.replace("activeShowPlace", "inactiveShowPlace");
-    performance.classList.replace("activeShowPlace", "inactiveShowPlace");
+    home.classList.replace("animationIn", "animationOut");
+    people.classList.replace("animationIn", "animationOut");
+    performance.classList.replace("animationIn", "animationOut");
+
+    setTimeout(() => {
+        myDashboard.classList.replace("animationOut", "animationIn");
+    
+        home.classList.replace("activeShowPlace", "inactiveShowPlace");
+        myDashboard.classList.replace("inactiveShowPlace", "activeShowPlace");
+        people.classList.replace("activeShowPlace", "inactiveShowPlace");
+        performance.classList.replace("activeShowPlace", "inactiveShowPlace");
+    }, 600) 
 })
 
 buttonPeople.addEventListener("click", e => {
-    home.classList.replace("activeShowPlace", "inactiveShowPlace");
-    myDashboard.classList.replace("activeShowPlace", "inactiveShowPlace");
-    people.classList.replace("inactiveShowPlace", "activeShowPlace");
-    performance.classList.replace("activeShowPlace", "inactiveShowPlace");
+    home.classList.replace("animationIn", "animationOut");
+    myDashboard.classList.replace("animationIn", "animationOut");
+    performance.classList.replace("animationIn", "animationOut");
+    setTimeout(() => {
+        people.classList.replace("animationOut", "animationIn");
+    
+        home.classList.replace("activeShowPlace", "inactiveShowPlace");
+        myDashboard.classList.replace("activeShowPlace", "inactiveShowPlace");
+        people.classList.replace("inactiveShowPlace", "activeShowPlace");
+        performance.classList.replace("activeShowPlace", "inactiveShowPlace");
+    }, 600) 
 })
 
 buttonPerformance.addEventListener("click", e => {
-    home.classList.replace("activeShowPlace", "inactiveShowPlace");
-    myDashboard.classList.replace("activeShowPlace", "inactiveShowPlace");
-    people.classList.replace("activeShowPlace", "inactiveShowPlace");
-    performance.classList.replace("inactiveShowPlace", "activeShowPlace");
+    home.classList.replace("animationIn", "animationOut");
+    myDashboard.classList.replace("animationIn", "animationOut");
+    people.classList.replace("animationIn", "animationOut");
+    setTimeout(() => {
+        performance.classList.replace("animationOut", "animationIn");
+    
+        home.classList.replace("activeShowPlace", "inactiveShowPlace");
+        myDashboard.classList.replace("activeShowPlace", "inactiveShowPlace");
+        people.classList.replace("activeShowPlace", "inactiveShowPlace");
+        performance.classList.replace("inactiveShowPlace", "activeShowPlace");
+    }, 600) 
 })
-
