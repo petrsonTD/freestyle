@@ -52,7 +52,7 @@ buttonHome.addEventListener("click", e => {
         myDashboard.classList.replace("activeShowPlace", "inactiveShowPlace");
         people.classList.replace("activeShowPlace", "inactiveShowPlace");
         performance.classList.replace("activeShowPlace", "inactiveShowPlace");
-    }, 600)
+    }, 450)
 })
 
 buttonMyDashboard.addEventListener("click", e => {
@@ -67,7 +67,7 @@ buttonMyDashboard.addEventListener("click", e => {
         myDashboard.classList.replace("inactiveShowPlace", "activeShowPlace");
         people.classList.replace("activeShowPlace", "inactiveShowPlace");
         performance.classList.replace("activeShowPlace", "inactiveShowPlace");
-    }, 600) 
+    }, 450) 
 })
 
 buttonPeople.addEventListener("click", e => {
@@ -81,7 +81,7 @@ buttonPeople.addEventListener("click", e => {
         myDashboard.classList.replace("activeShowPlace", "inactiveShowPlace");
         people.classList.replace("inactiveShowPlace", "activeShowPlace");
         performance.classList.replace("activeShowPlace", "inactiveShowPlace");
-    }, 600) 
+    }, 450) 
 })
 
 buttonPerformance.addEventListener("click", e => {
@@ -95,5 +95,5 @@ buttonPerformance.addEventListener("click", e => {
         myDashboard.classList.replace("activeShowPlace", "inactiveShowPlace");
         people.classList.replace("activeShowPlace", "inactiveShowPlace");
         performance.classList.replace("inactiveShowPlace", "activeShowPlace");
-    }, 600) 
+    }, 450) 
 })
