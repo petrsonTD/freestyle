@@ -34,9 +34,10 @@ body {
 
 .sidebar .profile img {
     display: block;
-    width: 40px;
-    margin: 10px;
+    width: 46px;
+    margin: 7px;
     margin-top: 20px;
+    margin-bottom: 50px;
     
     border-radius: 50%;
     /* margin: auto 10px; */
@@ -65,22 +66,30 @@ body {
     /* padding: auto 10px; */
     border-bottom: 1px solid #492049;
     color: #e9e9e9;
-    font-size: 32px;
+    font-size: 16px;
     /* position: relative; */
-    height: 90px;
+    height: 60px;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
 .sidebar ul li a .icon {
     color: #dee4ec;
     /* width: 10px; */
+    font-size: 32px;
+
+}
+
+i {
+    padding: 12px;
+    
+
 }
 
 .sidebar ul li a:hover,
 .sidebar ul li a.active {
     color: #ffffff;
     background: #381838ab;
-    border-right: 2px solid #492049;
+    /* border-right: 2px solid #492049; */
 }
 
 .sidebar ul li a:hover .icon,
