@@ -20,7 +20,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 15vw;
+    width: 80px;
     height: 150vh;
     padding: 25px 0;
     transition: all 1s ease;
@@ -33,8 +33,7 @@ body {
 
 .sidebar .profile img {
     display: block;
-    width: 10vw;
-    transition: all 1s ease;
+    width: 65px;
     
     border-radius: 50%;
     margin: 0 auto;
@@ -48,7 +47,7 @@ body {
 
 .sidebar .profile p {
     color: #e9e9e9;
-    font-size: 0.8rem;
+    font-size: auto;
     padding: auto;
     padding-bottom: 10px;
 }
@@ -69,7 +68,7 @@ body {
 
 .sidebar ul li a .icon {
     color: #dee4ec;
-    width: 42px;
+    width: 10px;
 }
 
 .sidebar ul li a:hover,
